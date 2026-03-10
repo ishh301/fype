@@ -1,43 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Resources | Fype</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#111827;
+line-height:1.6;
+}
+
+/* Container */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* Header */
+
+header{
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#2563eb;
+}
+
+.nav-links a{
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+color:#374151;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#2563eb;
+}
+
+/* Resources Section */
+
+.resources{
+padding:100px 0;
+text-align:center;
+}
+
+.resources h1{
+font-size:40px;
+margin-bottom:50px;
+}
+
+/* Grid Layout */
+
+.resources-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+/* Resource Card */
+
+.resource-card{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.resource-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.resource-card h3{
+font-size:22px;
+margin-bottom:12px;
+color:#0f172a;
+}
+
+.resource-card p{
+color:#4b5563;
+font-size:16px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.resources h1{
+font-size:30px;
+}
+
+.nav-links a{
+margin-left:15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="container">
+
 <nav>
+
 <div class="logo">Fype</div>
+
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="resources.html">Resources</a>
 </div>
+
 </nav>
+
 </div>
+
 </header>
 
-<section style="padding:80px 0">
+
+<section class="resources">
+
 <div class="container">
 
 <h1>Resources</h1>
 
+<div class="resources-grid">
+
+<div class="resource-card">
 <h3>Reports</h3>
-<p>Industry reports and trend analyses.</p>
+<p>
+Industry reports and structured trend analyses that provide
+data-driven understanding of evolving markets.
+</p>
+</div>
 
+<div class="resource-card">
 <h3>Case Studies</h3>
-<p>Examples of how insights helped companies grow.</p>
+<p>
+Examples demonstrating how analytical insights and strategic
+recommendations helped organizations grow.
+</p>
+</div>
 
+<div class="resource-card">
 <h3>Guides</h3>
-<p>Practical frameworks for decision making.</p>
+<p>
+Practical frameworks and step-by-step methodologies designed
+to support informed decision making.
+</p>
+</div>
 
 </div>
+
+</div>
+
 </section>
+
 </body>
+
 </html>
